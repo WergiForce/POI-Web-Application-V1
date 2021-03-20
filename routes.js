@@ -16,5 +16,5 @@ module.exports = [
   { method: "GET", path: "/home", config: Geoheritage.home },
   { method: "GET", path: "/report", config: Geoheritage.report },
   { method: "POST", path: "/addSite", config: Geoheritage.addSite },
-  
+
 ];
