@@ -17,4 +17,18 @@ module.exports = [
   { method: "GET", path: "/report", config: Geoheritage.report },
   { method: "POST", path: "/addSite", config: Geoheritage.addSite },
 
+  { method: 'GET', path: '/', config: Gallery.index },
+  { method: 'POST', path: '/uploadfile', config: Gallery.uploadFile },
+  { method: 'GET', path: '/deleteimage/{id}', config: Gallery.deleteImage },
+  {
+    method: 'GET',
+    path: '/{param*}',
+    handler: {
+      directory: {
+        path: './public'
+      }
+    },
+    options: { auth: false }
+  }
+
 ];

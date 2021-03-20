@@ -8,12 +8,19 @@ const Cookie = require("@hapi/cookie");
 const Joi = require("@hapi/joi");
 const env = require("dotenv");
 const Boom = require("@hapi/boom");
+const ImageStore = require('./app/models/image-store');
 
 env.config();
 
 const server = Hapi.server({
   port: process.env.PORT || 3000,
 });
+
+const credentials = {
+  cloud_name: process.env.name,
+  api_key:process.env.key,
+  api_secret: process.env.secret
+};
 
 async function init() {
   await server.register(Inert);
