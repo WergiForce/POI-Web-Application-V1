@@ -17,15 +17,4 @@ module.exports = [
   { method: "GET", path: "/report", config: Geoheritage.report },
   { method: "POST", path: "/addSite", config: Geoheritage.addSite },
 
-  // This doesn't yet matter as I don't host the images locally, tag for removal
-  {
-    method: "GET",
-    path: "/{param*}",
-    handler: {
-      directory: {
-        path: "./public",
-      },
-    },
-    options: { auth: false },
-  },
 ];
