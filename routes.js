@@ -2,6 +2,7 @@
 
 const Accounts = require("./app/controllers/accounts");
 const Geoheritage = require("./app/controllers/geoheritage");
+const Gallery = require('./app/controllers/gallery');
 
 module.exports = [
   { method: "GET", path: "/", config: Accounts.index },
@@ -17,7 +18,6 @@ module.exports = [
   { method: "GET", path: "/report", config: Geoheritage.report },
   { method: "POST", path: "/addSite", config: Geoheritage.addSite },
 
-  { method: 'GET', path: '/', config: Gallery.index },
   { method: 'POST', path: '/uploadfile', config: Gallery.uploadFile },
   { method: 'GET', path: '/deleteimage/{id}', config: Gallery.deleteImage },
   {
