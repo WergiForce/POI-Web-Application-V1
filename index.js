@@ -38,6 +38,8 @@ async function init() {
       isCached: false,
     });
 
+  ImageStore.configure(credentials);
+
   server.auth.strategy("session", "cookie", {
     cookie: {
       name: process.env.cookie_name,
