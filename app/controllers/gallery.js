@@ -1,15 +1,16 @@
 'use strict';
 
-const ImageStore = require('../models/image-store');
+const ImageStore = require('../utils/image-store');
 
 const Gallery = {
   index: {
     handler: async function(request, h) {
       try {
-        const allImages = await ImageStore.getAllImages();
+        const allImages = await ImageStore.getImagesByFolder(request.params._id);
         return h.view('gallery', {
-          title: 'Cloudinary Gallery',
-          images: allImages
+          title: 'Gallery',
+          images: allImages,
+          id: request.params._id,
         });
       } catch (err) {
         console.log(err);
@@ -56,8 +57,8 @@ const Gallery = {
   deleteImage: {
     handler: async function(request, h) {
       try {
-        await ImageStore.deleteImage(request.params.id);
-        return h.redirect('/gallery');
+        await ImageStore.deleteImage(request.params.public_id);
+        return h.redirect('/gallery/'+request.params._id);
       } catch (err) {
         console.log(err);
       }

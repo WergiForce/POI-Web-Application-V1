@@ -21,21 +21,23 @@ const ImageStore = {
   },
 
   getImagesByFolder: async function(folder) {
-    let myFolder = folder.toString() + "/";
+    let myFolder = folder.toString() +"/";
     const result = await cloudinary.v2.api.resources({
       type: 'upload',
-      prefix: myFolder,
-    });
+      prefix: myFolder},
+    );
     return result.resources;
   },
 
-  uploadImage: async function(imagefile) {
+  uploadImage: async function(imagefile,folder) {
     await writeFile('./public/temp.img', imagefile);
-    await cloudinary.uploader.upload('./public/temp.img', { folder: folder });
+    await cloudinary.v2.uploader.upload('./public/temp.img', { folder: folder });
   },
 
   deleteImage: async function(id) {
-    await cloudinary.v2.uploader.destroy(id, {});
+    await cloudinary.v2.uploader.destroy(id, (error, result) => {
+      console.log(result)
+    });
   },
 
 };

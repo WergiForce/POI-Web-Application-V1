@@ -19,8 +19,8 @@ module.exports = [
   { method: "POST", path: "/addSite", config: Geoheritage.addSite },
 
   { method: 'GET', path: '/gallery/{_id}', config: Gallery.index },
-  { method: 'POST', path: '/uploadfile', config: Gallery.uploadFile },
-  { method: 'GET', path: '/deleteimage/{id}', config: Gallery.deleteImage },
+  { method: 'POST', path: '/uploadfile/{_id}', config: Gallery.uploadFile },
+  { method: 'GET', path: '/deleteimage/{public_id}', config: Gallery.deleteImage },
   { method: 'GET', path: '/upload', config: Gallery.upload },
 
   {

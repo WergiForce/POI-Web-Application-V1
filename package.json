@@ -19,8 +19,7 @@
     "cloudinary": "^1.25.0",
     "dotenv": "^8.2.0",
     "handlebars": "^4.7.7",
-    "mongoose": "^5.12.1",
-    "uuid": "^8.3.2"
+    "mongoose": "^5.12.1"
   },
   "devDependencies": {
     "prettier": "^2.2.1"

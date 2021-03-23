@@ -8,7 +8,7 @@ const Cookie = require("@hapi/cookie");
 const Joi = require("@hapi/joi");
 const env = require("dotenv");
 const Boom = require("@hapi/boom");
-const ImageStore = require('./app/models/image-store');
+const ImageStore = require('./app/utils/image-store');
 
 env.config();
 
