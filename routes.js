@@ -2,6 +2,7 @@
 
 const Accounts = require("./app/controllers/accounts");
 const Geoheritage = require("./app/controllers/geoheritage");
+const Gallery = require('./app/controllers/gallery');
 
 module.exports = [
   { method: "GET", path: "/", config: Accounts.index },
@@ -16,5 +17,21 @@ module.exports = [
   { method: "GET", path: "/home", config: Geoheritage.home },
   { method: "GET", path: "/report", config: Geoheritage.report },
   { method: "POST", path: "/addSite", config: Geoheritage.addSite },
+
+  { method: 'GET', path: '/gallery/{_id}', config: Gallery.index },
+  { method: 'POST', path: '/uploadfile/{_id}', config: Gallery.uploadFile },
+  { method: 'GET', path: '/deleteimage/{public_id}', config: Gallery.deleteImage },
+  { method: 'GET', path: '/upload', config: Gallery.upload },
+
+  {
+    method: 'GET',
+    path: '/{param*}',
+    handler: {
+      directory: {
+        path: './public'
+      }
+    },
+    options: { auth: false }
+  }
 
 ];
