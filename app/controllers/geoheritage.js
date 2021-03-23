@@ -2,6 +2,7 @@
 
 const Geosite = require("../models/geosites");
 const User = require("../models/user");
+const Joi = require("@hapi/joi");
 
 const Geoheritage = {
   home: {

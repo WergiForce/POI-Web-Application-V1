@@ -16,8 +16,20 @@
                 <td>{{location}}</td>
                 <td>{{description}}</td>
                 <td>{{geologist.firstName}} {{geologist.lastName}}</td>
+                <td>
+                    <a href="/gallery/{{_id}}" style="padding-left: 0.5em;" class="uk-card uk-card-small uk-card-hover" >
+                        <i class="fas far fa-images fa-2x" pos="top" title="open gallery" uk-tooltip></i>
+                    </a>
+                </td>
             </tr>
         {{/each}}
         </tbody>
     </table>
+    <div class="uk-container uk-padding-small">
+        <div class="uk-child-width-1-4@s uk-flex uk-flex-center" uk-grid uk-height-match="target: .uk-card">
+            {{#each images}}
+                {{> card}}
+            {{/each}}
+        </div>
+    </div>
 </div>

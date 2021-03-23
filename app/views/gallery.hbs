@@ -1,0 +1,32 @@
+<div class="uk-flex uk-flex-center uk-flex-middle uk-grid-small" uk-grid>
+    {{> title-card title="Gallery" subTitle="Image gallery"}}
+    {{> main-menu }}
+</div>
+
+<div class="uk-inline">
+
+    <div class=" uk-padding-small">
+        <i class="fas far fa-plus-square fa-3x" title="Add Image" pos="bottom" uk-tooltip></i>
+        Add Image to Gallery
+    </div>
+
+    <div uk-drop="mode: click; pos: bottom-center; boundary: .boundary-align; boundary-align: true">
+        <div>
+            {{> upload }}
+        </div>
+    </div>
+</div>
+
+<div>
+    <ul class="uk-iconnav uk-margin-left">
+
+    </ul>
+</div>
+
+<div class="uk-container uk-padding-small">
+    <div class="uk-child-width-1-4@s uk-flex uk-flex-center" uk-grid uk-height-match="target: .uk-card">
+        {{#each images}}
+            {{> image-card}}
+        {{/each}}
+    </div>
+</div>
