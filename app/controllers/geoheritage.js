@@ -38,6 +38,19 @@ const Geoheritage = {
       }
     },
   },
+  deleteSite: {
+    handler: async function (request, h) {
+      try {
+        const site = Geosite.findById(request.params._id);
+        console.log("Removing Geoheritage Site " + site);
+        await site.deleteOne();
+        return h.redirect("/report");
+      } catch
+        (err) {
+        return h.view('home', {errors: [{message: err.message}]});
+      }
+    },
+  },
 };
 
 module.exports = Geoheritage;
