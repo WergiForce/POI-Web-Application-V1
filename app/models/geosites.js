@@ -5,7 +5,8 @@ const Schema = Mongoose.Schema;
 
 const geoSiteSchema = new Schema({
   siteName: String,
-  location: String,
+  lat: Number,
+  long: Number,
   description: String,
   geologist: {
     type: Schema.Types.ObjectId,
