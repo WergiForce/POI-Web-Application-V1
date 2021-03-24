@@ -26,11 +26,19 @@
                         <input class="uk-input" id="form-stacked-text" type="text" name="description" placeholder="Description" />
                     </div>
                 </div>
-            </div>
-            <div class=" uk-width-1-2@m">
                 <div class="uk-margin">
-                    <button class="submit uk-button uk-button-primary uk-button-large uk-width-1-1">Submit</button>
+                    <label class="uk-form-label" for="form-stacked-text">Select Category</label>
+                    <div class="uk-form-controls">
+                        {{#each theme }}
+                            <lable>
+                                <input class="uk-radio" type="radio" name="theme" value="{{themeTitle}}" /> {{themeTitle}}
+                            </lable>
+                        {{/each}}
+                    </div>
                 </div>
+            </div>
+            <div class="uk-margin">
+                <button class="submit uk-button uk-button-primary uk-button-large uk-width-1-1">Submit</button>
             </div>
         </div>
     </form>

@@ -8,6 +8,7 @@
         <th>Latitude</th>
         <th>Longitude</th>
         <th>Description</th>
+        <th>IGH Theme</th>
         <th>Added By</th>
         </thead>
         <tbody class="uk-text-left">
@@ -17,6 +18,7 @@
                 <td>{{lat}}</td>
                 <td>{{long}}</td>
                 <td>{{description}}</td>
+                <td>{{theme.themeTitle}}</td>
                 <td>{{geologist.firstName}} {{geologist.lastName}}</td>
                 <td>
                     <a href="/delete-site/{{_id}}" class="uk-card uk-card-small uk-card-hover" >
@@ -37,11 +39,4 @@
         {{/each}}
         </tbody>
     </table>
-<!--<div class="uk-container uk-padding-small">
-        <div class="uk-child-width-1-4@s uk-flex uk-flex-center" uk-grid uk-height-match="target: .uk-card">
-            {{#each images}}
-                {{> card}}
-            {{/each}}
-        </div>
-    </div>-->
 </div>

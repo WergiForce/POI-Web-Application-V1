@@ -1,0 +1,29 @@
+{
+  "users": {
+    "_model": "User",
+    "ivan": {
+      "firstName": "Ivan",
+      "lastName": "de Wergifosse",
+      "email": "idw@test.com",
+      "password": "password"
+    }
+  },
+  "theme": {
+    "_model": "Theme",
+    "01": {
+      "themeNo": "01",
+      "themeTitle": "Karst"
+    }
+  },
+  "geosites": {
+    "_model": "Geosite",
+    "one": {
+      "siteName": "Mullaghmore",
+      "lat": "53.0079",
+      "long": "9.0022",
+      "description": "Karst landscape as part of the Burren",
+      "geologist": "->users.ivan",
+      "theme": "->theme.01"
+    }
+  }
+}
