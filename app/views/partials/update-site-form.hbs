@@ -8,13 +8,13 @@
     <div class="uk-margin">
         <label class="uk-form-label" for="form-stacked-text">Latitude</label>
         <div class="uk-inline uk-width-1-1">
-            <input class="uk-input" id="form-stacked-text" type="string" name="lat" value="{{site.lat}}" />
+            <input class="uk-input" id="form-stacked-text" type="number" name="lat" value="{{site.lat}}" />
         </div>
     </div>
     <div class="uk-margin">
         <label class="uk-form-label" for="form-stacked-text">Longitude</label>
         <div class="uk-inline uk-width-1-1">
-            <input class="uk-input" id="form-stacked-text" type="string" name="long" value="{{site.long}}" />
+            <input class="uk-input" id="form-stacked-text" type="number" name="long" value="{{site.long}}" />
         </div>
     </div>
     <div class="uk-margin">
@@ -23,18 +23,10 @@
             <input class="uk-input" id="form-stacked-text" type="string" name="description" value="{{site.description}}" />
         </div>
     </div>
-    <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-text">Select Category</label>
-        <div class="uk-form-controls">
-            {{#each theme }}
-                <lable>
-                    <input class="uk-radio" type="radio" name="theme" value="{{themeTitle}}" /> {{themeTitle}}
-                </lable>
-            {{/each}}
+        <div class="uk-margin">
+            <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">Save</button>
         </div>
-    </div>
-    <div class="uk-margin">
-        <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">Save</button>
-    </div>
-</form>
+    </form>
+    {{> error }}
+
 

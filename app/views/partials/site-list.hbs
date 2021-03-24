@@ -1,4 +1,4 @@
-<div class="uk-margin uk-width-2xlarge uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
+<div class="uk-margin uk-width-auto@m uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
     <table class="uk-table">
         <caption>
             Sites Captured to Date
@@ -20,11 +20,7 @@
                 <td>{{description}}</td>
                 <td>{{theme.themeTitle}}</td>
                 <td>{{geologist.firstName}} {{geologist.lastName}}</td>
-                <td>
-                    <a href="/delete-site/{{_id}}" class="uk-card uk-card-small uk-card-hover" >
-                        <i class="fas far fa-trash fa-2x uk-position-relative uk-position-right " title="Delete Site" uk-tooltip></i>
-                    </a>
-                </td>
+
                 <td>
                     <a href="/gallery/{{_id}}" class="uk-card uk-card-small uk-card-hover" >
                         <i class="fas far fa-images fa-2x" pos="top" title="open gallery" uk-tooltip></i>
@@ -33,6 +29,11 @@
                 <td>
                     <a href="/update-site/{{_id}}" class="uk-card uk-card-small uk-card-hover">
                         <i class="fas far fa-user-edit fa-2x" title="Edit Site" uk-tooltip></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="/delete-site/{{_id}}" class="uk-card uk-card-small uk-card-hover" >
+                        <i class="fas far fa-trash fa-2x uk-position-relative uk-position-right " title="Delete Site" uk-tooltip></i>
                     </a>
                 </td>
             </tr>
