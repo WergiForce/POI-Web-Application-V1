@@ -12,6 +12,10 @@ const geoSiteSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: "User",
   },
+  theme: {
+    type: Schema.Types.ObjectId,
+    ref: "Theme",
+  }
 });
 
 module.exports = Mongoose.model("Geosite", geoSiteSchema);

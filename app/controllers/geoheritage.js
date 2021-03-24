@@ -2,18 +2,20 @@
 
 const Geosite = require("../models/geosites");
 const User = require("../models/user");
+const Theme = require("../models/theme");
 const Joi = require("@hapi/joi");
 
 const Geoheritage = {
   home: {
-    handler: function (request, h) {
-      return h.view("home", { title: "Add a site" });
+    handler: async function (request, h) {
+      const theme = await Theme.find().lean();
+      return h.view("home", { title: "Add a site", theme: theme });
     },
   },
 
   report: {
     handler: async function (request, h) {
-      const geoSite = await Geosite.find().populate("geologist").lean();
+      const geoSite = await Geosite.find().populate("geologist").populate('theme').lean();
       return h.view("report", {
         title: "Sites added to Date",
         geoSite: geoSite,
@@ -27,12 +29,17 @@ const Geoheritage = {
         const id = request.auth.credentials.id;
         const user = await User.findById(id);
         const data = request.payload;
+        const rawTheme = request.payload.theme;
+        const theme = await Theme.findOne({
+          themeTitle: rawTheme
+        })
         const newSite = new Geosite({
           siteName: data.siteName,
           lat: data.lat,
           long: data.long,
           description: data.description,
           geologist: user._id,
+          theme: theme._id,
         });
         await newSite.save();
         return h.redirect("/report");
