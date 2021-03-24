@@ -56,8 +56,7 @@ const Geoheritage = {
         console.log("Removing Geoheritage Site " + site);
         await site.deleteOne();
         return h.redirect("/report");
-      } catch
-        (err) {
+      } catch (err) {
         return h.view('home', {errors: [{message: err.message}]});
       }
     },
@@ -77,18 +76,16 @@ const Geoheritage = {
 
   updateSite: {
     handler: async function(request, h) {
-      try
-      {
+      try {
         const siteEdit = request.payload;
         const site = await Geosite.findById(request.params._id);
-        site.name = siteEdit.name;
+        site.siteName = siteEdit.siteName;
         site.lat = siteEdit.lat;
         site.long = siteEdit.long;
         site.description = siteEdit.description;
         await site.save();
         return h.redirect('/report');
-      } catch (err)
-      {
+      } catch (err) {
         return h.view('home', {errors: [{message: err.message}]});
       }
     }
