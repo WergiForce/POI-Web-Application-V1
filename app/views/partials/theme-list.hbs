@@ -1,0 +1,21 @@
+<div class="uk-margin uk-width-auto@m uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
+    <table class="uk-table">
+        <caption>
+            Irish Geological Heritage Themes
+        </caption>
+        <thead>
+        <th>Theme Number</th>
+        <th>Theme Title</th>
+        <th>Theme Details</th>
+        </thead>
+        <tbody class="uk-text-left">
+        {{#each theme}}
+            <tr>
+                <td>{{themeNo}}</td>
+                <td>{{themeTitle}}</td>
+                <td>{{themeDetails}}</td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>

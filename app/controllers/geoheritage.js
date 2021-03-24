@@ -23,6 +23,16 @@ const Geoheritage = {
     },
   },
 
+  themes: {
+    handler: async function (request, h) {
+      const theme = await Theme.find().populate('theme').lean();
+      return h.view("themes", {
+        title: "Irish Geological Heritage site themes",
+        theme: theme,
+      });
+    },
+  },
+
   addSite: {
     handler: async function (request, h) {
       try {
