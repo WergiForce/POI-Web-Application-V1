@@ -1,7 +1,7 @@
 <div class="uk-margin uk-width-2xlarge uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
     <form class="uk-form-stacked uk-text-left" action="/addSite" method="POST">
         <div class="uk-grid uk-grid-stack">
-            <div class="uk-width-1-2@m">
+            <div class="uk-width-1-1@m">
                 <div class="uk-margin">
                     <label class="uk-form-label" for="form-stacked-text">Site Name</label>
                     <div class="uk-form-controls">
@@ -28,17 +28,16 @@
                 </div>
                 <div class="uk-margin">
                     <label class="uk-form-label" for="form-stacked-text">Select Category</label>
-                    <div class="uk-form-controls">
+                    <select class="uk-select" name="theme">
+                        <option value="">Please select an IGH Theme</option>
                         {{#each theme }}
-                            <lable>
-                                <input class="uk-radio" type="radio" name="theme" value="{{themeTitle}}" /> {{themeTitle}}
-                            </lable>
+                            <option value="{{themeTitle}}">{{themeTitle}}</option>
                         {{/each}}
-                    </div>
+                    </select>
                 </div>
-            </div>
-            <div class="uk-margin">
-                <button class="submit uk-button uk-button-primary uk-button-large uk-width-1-1">Submit</button>
+                <div class="uk-margin uk-text-center">
+                    <button class="submit uk-button uk-button-primary uk-button-large uk-width-auto">Submit</button>
+                </div>
             </div>
         </div>
     </form>
