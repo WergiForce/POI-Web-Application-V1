@@ -29,7 +29,8 @@ const Geoheritage = {
         const data = request.payload;
         const newSite = new Geosite({
           siteName: data.siteName,
-          location: data.location,
+          lat: data.lat,
+          long: data.long,
           description: data.description,
           geologist: user._id,
         });
@@ -61,23 +62,21 @@ const Geoheritage = {
         const id = request.params._id;
         const site = await Geosite.findById(id).lean();
         return h.view("update-site", { title: "Edit site", site: site });
-      } catch {
+      } catch (err) {
         return h.view("login", { errors: [{ message: err.message }]});
       }
     }
   },
 
   updateSite: {
-    handler: async function(request, h)
-    {
-      console.log("Update site");
+    handler: async function(request, h) {
       try
       {
         const siteEdit = request.payload;
         const site = await Geosite.findById(request.params._id);
-        console.log(site);
         site.name = siteEdit.name;
-        site.location = siteEdit.location;
+        site.lat = siteEdit.lat;
+        site.long = siteEdit.long;
         site.description = siteEdit.description;
         await site.save();
         return h.redirect('/report');

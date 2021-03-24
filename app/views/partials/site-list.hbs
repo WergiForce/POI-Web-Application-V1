@@ -5,7 +5,8 @@
         </caption>
         <thead>
         <th>Title</th>
-        <th>Location</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
         <th>Description</th>
         <th>Added By</th>
         </thead>
@@ -13,7 +14,8 @@
         {{#each geoSite}}
             <tr>
                 <td>{{siteName}}</td>
-                <td>{{location}}</td>
+                <td>{{lat}}</td>
+                <td>{{long}}</td>
                 <td>{{description}}</td>
                 <td>{{geologist.firstName}} {{geologist.lastName}}</td>
                 <td>

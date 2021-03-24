@@ -1,30 +1,30 @@
-<div class="uk-margin uk-width-2xlarge uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
-    <form class="uk-form-stacked uk-text-left" action="/update-site/{{site._id}}" method="POST">
-        <div class="uk-grid uk-grid-stack">
-            <div class="uk-width-1-2@m">
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-text">Site Name</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="form-stacked-text" type="string" name="siteName" value="{{site.siteName}}"/>
-                    </div>
-                </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-text">Location</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="form-stacked-text" type="string" name="location" value="{{site.location}}" />
-                    </div>
-                </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-text">Description</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="form-stacked-text" type="string" name="description" value="{{site.description}}" />
-                    </div>
-                </div>
-            <div class=" uk-width-2-2@m">
-                <div class=" uk-position-large uk-position-center-right">
-                    <button  class="  submit uk-button uk-button-primary uk-button-large uk-width-1-1">Update Geoheritage Site</button>
-                </div>
-            </div>
+<form action="/update-site/{{site._id}}" method="POST">
+    <div class="uk-margin">
+        <div class="uk-inline uk-width-1-1">
+            <label class="uk-form-label" for="form-stacked-text">Site Name</label>
+            <input class="uk-input" type="string" name="siteName" value="{{site.siteName}}"/>
         </div>
-    </form>
-</div>
+    </div>
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Latitude</label>
+        <div class="uk-inline uk-width-1-1">
+            <input class="uk-input" id="form-stacked-text" type="string" name="lat" value="{{site.lat}}" />
+        </div>
+    </div>
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Longitude</label>
+        <div class="uk-inline uk-width-1-1">
+            <input class="uk-input" id="form-stacked-text" type="string" name="long" value="{{site.long}}" />
+        </div>
+    </div>
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Description</label>
+        <div class="uk-inline uk-width-1-1">
+            <input class="uk-input" id="form-stacked-text" type="string" name="description" value="{{site.description}}" />
+        </div>
+    </div>
+    <div class="uk-margin">
+        <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">Save</button>
+    </div>
+</form>
+
