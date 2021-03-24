@@ -13,6 +13,66 @@
     "01": {
       "themeNo": "01",
       "themeTitle": "Karst"
+    },
+    "02": {
+      "themeNo": "02",
+      "themeTitle": "Precambrian to Devonian Palaeontology"
+    },
+    "03": {
+      "themeNo": "03",
+      "themeTitle": "Carboniferous to Pliocene Palaeontology"
+    },
+    "04": {
+      "themeNo": "04",
+      "themeTitle": "Cambrian to Silurian"
+    },
+    "05": {
+      "themeNo": "05",
+      "themeTitle": "Precambrian"
+    },
+    "06": {
+      "themeNo": "06",
+      "themeTitle": "Mineralogy"
+    },
+    "07": {
+      "themeNo": "07",
+      "themeTitle": "Quaternary"
+    },
+    "08": {
+      "themeNo": "08",
+      "themeTitle": "Lower Carboniferous"
+    },
+    "09": {
+      "themeNo": "09",
+      "themeTitle": "Upper Carboniferous and Permian"
+    },
+    "10": {
+      "themeNo": "10",
+      "themeTitle": "Devonian"
+    },
+    "11": {
+      "themeNo": "11",
+      "themeTitle": "Igneous Intrusions"
+    },
+    "12": {
+      "themeNo": "12",
+      "themeTitle": "Mesozoic and Cenozoic"
+    },
+    "13": {
+      "themeNo": "13",
+      "themeTitle": "Coastal Geomorphology"
+    },
+    "14": {
+      "themeNo": "14",
+      "themeTitle": "Fluvial and Lacustrian Geomorphology"
+    },
+    "15": {
+      "themeNo": "15",
+      "themeTitle": "Economic Geology"
+    },
+    "16": {
+      "themeNo": "16",
+      "themeTitle": "Hydrogeology"
     }
   },
   "geosites": {
@@ -24,6 +84,22 @@
       "description": "Karst landscape as part of the Burren",
       "geologist": "->users.ivan",
       "theme": "->theme.01"
+    },
+    "two": {
+      "siteName": "Bray Head",
+      "lat": "53.1905",
+      "long": "6.0842",
+      "description": "Oldhamia trace fossils on Bray Head",
+      "geologist": "->users.ivan",
+      "theme": "->theme.02"
+    },
+    "three": {
+      "siteName": "Feltrim Quarry",
+      "lat": "53.4389",
+      "long": "6.1956",
+      "description": "Exceptional preservation and assemblage of evolutionary and palaeoecological interest",
+      "geologist": "->users.ivan",
+      "theme": "->theme.03"
     }
   }
 }
