@@ -12,67 +12,83 @@
     "_model": "Theme",
     "01": {
       "themeNo": "01",
-      "themeTitle": "Karst"
+      "themeTitle": "Karst",
+      "themeDetails": "Karst is the name given to areas of limestone bedrock which have a high degree of weathering caused by solution together with a characteristic underground drainage system. Karst in Ireland is an important element of the landscape since Carboniferous limestone bedrock occurs over about half of the country, although not all of this is well exposed. Many of the well- known scenic areas are primarily of limestone terrain and are characterised by karstic landforms."
     },
     "02": {
       "themeNo": "02",
-      "themeTitle": "Precambrian to Devonian Palaeontology"
+      "themeTitle": "Precambrian to Devonian Palaeontology",
+      "themeDetails": "These sites cover a significant range of palaeontological interest and importance."
     },
     "03": {
       "themeNo": "03",
-      "themeTitle": "Carboniferous to Pliocene Palaeontology"
+      "themeTitle": "Carboniferous to Pliocene Palaeontology",
+      "themeDetails": "Nearly half of Ireland is underlain with Carboniferous strata, and much of this contains fossils of some type. It would be unrealistic to document them all; therefore a selection of sites that contain either the finest examples, unique examples, exceptional preservation, or assemblages of evolutionary or palaeoecological interest was selected for this theme."
     },
     "04": {
       "themeNo": "04",
-      "themeTitle": "Cambrian to Silurian"
+      "themeTitle": "Cambrian to Silurian",
+      "themeDetails": "These periods saw the joining together of the two parts of Ireland with the closure of the Iapetus Ocean.  The Iapetus Suture Zone runs from Clogherhead in Co. Louth to the mouth of the Shannon between Clare and Limerick.  Everything north of this has a geological relationship with Norway, Greenland and much of North America and everything south of the suture is closer in origin to Africa and Australia.  The closure of the ocean deformed the margins of the two colliding continents and formed the Caledonian mountains."
     },
     "05": {
       "themeNo": "05",
-      "themeTitle": "Precambrian"
+      "themeTitle": "Precambrian",
+      "themeDetails": "The Precambrian Eon covers the time from the formation of the Earth 4.6 billion years ago to 541 million years ago. In Ireland, the main suite of rocks from this time is known as the Dalradian, found in Donegal, Sligo, Mayo, Connemara, Co. Galway, and also in Tyrone and Antrim, but there are a few other examples of non-Dalradian Precambrian rocks eg. Wexford.  The Dalradian is a sequence of marine sediments deposited on the rifting margin of the Iapetus Ocean and later deformed at the closing of the ocean. The oldest rocks in Ireland are the Annagh Gneiss in Belmullet ar 1.75 billion years old and Inishtrahall off Donegal at 1.78 billion years."
     },
     "06": {
       "themeNo": "06",
-      "themeTitle": "Mineralogy"
+      "themeTitle": "Mineralogy",
+      "themeDetails": "Minerals are individual combinations of elements that are found as distinct forms in their own right. Several thousand individual minerals are known. Igneous rocks and metamorphic rocks are usually formed from particular associations of minerals and their classification can be based on the mineral species, of which they are made, as well as texture, bulk chemistry and other characteristics such as their mode of origin."
     },
     "07": {
       "themeNo": "07",
-      "themeTitle": "Quaternary"
+      "themeTitle": "Quaternary",
+      "themeDetails": "The Ice Ages over the past couple of million years have had a profound effect on our landscape. Over most of the country, the geology of the bedrock is either strongly sculpted by frost shattering and ice movements or else partially obscured by a blanket of glacial deposits. This geological heritage displays great variety and a larger number of sites will be necessary to exhibit it than for any other theme except perhaps for the Carboniferous bedrock geology which underlies about half of the land surface."
     },
     "08": {
       "themeNo": "08",
-      "themeTitle": "Lower Carboniferous"
+      "themeTitle": "Lower Carboniferous",
+      "themeDetails": "Limestone from the Lower Carboniferous is the most widespread rock in Ireland and is found in every County apart from Wicklow. Ireland was in the tropics and was mainly covered in warm shallow seas where coral reef systems developed. Much of central Ireland is underlain by fossiliferous limestone from the Lower Carboniferous.  It is used as a building stone throughout the country, for example, Galway Cathedral."
     },
     "09": {
       "themeNo": "09",
-      "themeTitle": "Upper Carboniferous and Permian"
+      "themeTitle": "Upper Carboniferous and Permian",
+      "themeDetails": "The seas of the Lower Carboniferous gave way to swamps and forests in the Upper Carboniferous. The forests are preserved as the coal seams in Arigna, Co. Roscommon and Castlecomer, Co. Kilkenny. The most famous sequence of Upper Carboniferous in Ireland is exposed on the Cliffs of Moher in Co. Clare. Here the beds of siltstone, sandstone, and shale show the evolution of the sedimentary environment from that time. The Permian saw the change in Ireland too much drier conditions and the subsequent formation of evaporites, for example, Gypsum in Kingscourt in Co. Cavan."
     },
     "10": {
       "themeNo": "10",
-      "themeTitle": "Devonian"
+      "themeTitle": "Devonian",
+      "themeDetails": "Life transitioned onto land during this period. This is best illustrated by the amphibian trackways preserved in Valentia Island, Co. Kerry. The trackways are the earliest example of animals in a terrestrial environment and because of this, they are of international importance. Ireland was in the southern mid-latitudes during the Devonian and the environment was mainly desert. Large quantities of red sandstone (Old Red Sandstone) were deposited in Munster. The Caledonian granites, e.g. Wicklow and Donegal, are also Devonian in age but these are examined under IGH 11 - Igneous Intrusions."
     },
     "11": {
       "themeNo": "11",
-      "themeTitle": "Igneous Intrusions"
+      "themeTitle": "Igneous Intrusions",
+      "themeDetails": "There are two main types: the major bodies such as granites, and the minor features such as sills and dykes. The Wicklow Granite is an example of a major body. It was formed 400 million years ago and is actually made up of several different phases of crustal melting and intrusion of massive bodies, which now form the Dublin and Wicklow Mountains. Various dykes, narrow sheets of igneous lave which cut across any structural or sedimentary features of pre-existing host rocks. They usually relate to periods when the Earth's crust was under tension and large scale fractures were filled by molten lava from depth. In Northern Ireland, the earliest rifting associated with the opening of the Atlantic Ocean caused major outpourings of lavas in County Antrim. Across other parts of Ireland, dykes of Palaeogene age (around 60 million years ago) are known."
     },
     "12": {
       "themeNo": "12",
-      "themeTitle": "Mesozoic and Cenozoic"
+      "themeTitle": "Mesozoic and Cenozoic",
+      "themeDetails": "Most of the relevant sites are thought to be karstic depressions (dolines) or caves, such as Ballygiblin in County Cork where sediments have been preserved from sustained erosion. Ballydeenlea, near Killarney in County Kerry is one of the most famous as it includes Chalk deposits (widespread over southern and eastern England) otherwise only found in Northern Ireland. Did a Chalk sea once cover Ireland? Protecting sites such as this is the only way to allow answers to be found in the future."
     },
     "13": {
       "themeNo": "13",
-      "themeTitle": "Coastal Geomorphology"
+      "themeTitle": "Coastal Geomorphology",
+      "themeDetails": "Coastal geomorphology is the theme that includes all the landforms around the coast of Ireland, which have been created by the power of the sea. This theme will be trying to find the best examples of particular landforms. The panel will also try to identify locations where processes are actively happening today and the development of the landforms themselves, through recent time can be studied."
     },
     "14": {
       "themeNo": "14",
-      "themeTitle": "Fluvial and Lacustrian Geomorphology"
+      "themeTitle": "Fluvial and Lacustrian Geomorphology",
+      "themeDetails": "Environments and landforms related to rivers and lakes.  They include erosional and depositional features. the relationship to groundwater systems, relationship to the underlying bedrock geology and evidence of exploiting features formed during the last glacation."
     },
     "15": {
       "themeNo": "15",
-      "themeTitle": "Economic Geology"
+      "themeTitle": "Economic Geology",
+      "themeDetails": "Geology is not just an academic study of the earth, but principally a practical subject, whereby the theoretical understanding of processes and events in the record of the rocks are translated into discovery, exploitation, and use of geological resources. This geological foundation of resources to support cultural and economic development is equally worthy of assessment for the purposes of identifying and protecting key sites of value in the spectrum of geological heritage. Metallic mine sites are perhaps the largest group but numerous non-metallic minerals, building stone, and specialised deposits are all in need of appraisal in this IGH theme."
     },
     "16": {
       "themeNo": "16",
-      "themeTitle": "Hydrogeology"
+      "themeTitle": "Hydrogeology",
+      "themeDetails": "This geological theme is a very specialised one which will eventually select only a handful of sites which are important for their exceptional characteristics. The kinds of sites to be examined include warm springs, other non-karstic springs, or sites which demonstrate particular hydrogeological processes or unusual water chemistry. Some of the warm springs known around the country have been tapped for public or private supplies or to make sure of the heat, so the number of sites will probably be quite small, but they will be worth flagging as NHAs for their unusual nature."
     }
   },
   "geosites": {

@@ -20,6 +20,7 @@ module.exports = [
   { method: "GET", path: "/delete-site/{_id}", config: Geoheritage.deleteSite },
   { method: "GET", path: "/update-site/{_id}", config: Geoheritage.showUpdatedSite },
   { method: "POST", path: "/update-site/{_id}", config: Geoheritage.updateSite },
+  { method: "GET", path: "/themes", config: Geoheritage.themes },
 
   { method: 'GET', path: '/gallery/{_id}', config: Gallery.index },
   { method: 'POST', path: '/uploadfile/{_id}', config: Gallery.uploadFile },
